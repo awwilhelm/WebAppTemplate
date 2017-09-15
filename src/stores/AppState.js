@@ -23,7 +23,11 @@ export default class AppState {
       `https://jsonplaceholder.typicode.com${pathname}`,
     );
     console.log(data);
-    data.length > 0 ? this.setData(data) : this.setSingle(data);
+    if (data.length > 0) {
+      this.setData(data);
+    } else {
+      this.setSingle(data);
+    }
   }
 
   @action setData(data) {

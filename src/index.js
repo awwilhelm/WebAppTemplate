@@ -1,4 +1,3 @@
-import('./styles/main.scss');
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -9,6 +8,8 @@ import { rehydrate, hotRehydrate } from 'rfx-core';
 import { isProduction } from './utils/constants';
 import App from './components/App';
 import stores from './stores/stores';
+
+import('./styles/main.scss');
 
 const store = rehydrate();
 

@@ -41,7 +41,6 @@
     "image-webpack-loader": "^3.4.2",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",
-    "react-hot-loader": "next",
     "resolve-url-loader": "^2.1.0",
     "rimraf": "^2.5.4",
     "sass-loader": "^6.0.6",
@@ -66,6 +65,7 @@
     "pushstate-server": "^3.0.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-hot-loader": "next",
     "react-router-dom": "latest",
     "rfx-core": "^1.5.3",
     "whatwg-fetch": "^2.0.3"
