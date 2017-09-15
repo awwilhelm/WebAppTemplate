@@ -28,6 +28,12 @@ module.exports = {
     devtool: "eval",
     module: {
         rules: [
+            // {
+            //     enforce: "pre",
+            //     test: /\.js$/,
+            //     exclude: /node_modules/,
+            //     loader: "eslint-loader",
+            // },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -90,7 +96,6 @@ module.exports = {
     },
     plugins: [
         new webpack.NamedModulesPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({ hash: false, template: "./index.hbs" }),
         new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /nb/)
     ]
